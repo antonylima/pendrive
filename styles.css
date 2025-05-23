@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9; /* Fundo suave */
+    color: #333; /* Texto mais legível */
+    margin: 0;
+    padding: 0;
+}
+
+button, input {
+    margin: 10px;
+    padding: 10px 15px; /* Ajuste de espaçamento */
+    cursor: pointer;
+    background-color: #007BFF; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeitos de transição */
+}
+
+button:hover, input:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+button:active, input:active {
+    background-color: #003f7f; /* Cor ao clicar */
+    transform: scale(0.95); /* Leve redução ao clicar */
+}
+
+#lista{
+  display:none;
+}
