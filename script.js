@@ -31,3 +31,4 @@ function listFiles() {
 function downloadFile(fileName) {
     window.location.href = `download.php?file=${fileName}`;
 }
+
