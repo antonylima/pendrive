@@ -6,9 +6,7 @@ if (!empty($_FILES['files'])) {
     }
      echo "<script>alert('Upload realizado!')</script>";
     }
-
 else{
-
     }
 ?>
 
