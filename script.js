@@ -24,10 +24,10 @@ function listFiles() {
             files.forEach(file => {
                 fileList.innerHTML += `<p>${file} <button onclick="downloadFile('${file}')">Baixar</button></p>`;
             });
-        }); document.querySelector("#lista").style.display = "block";
+        });
+        document.querySelector("#lista").style.display = "block";
 }
 
 function downloadFile(fileName) {
     window.location.href = `download.php?file=${fileName}`;
 }
-
