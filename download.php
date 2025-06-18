@@ -5,7 +5,7 @@ if (isset($_GET['file'])) {
         header('Content-Type: application/octet-stream');
         header('Content-Disposition: attachment; filename="' . basename($file) . '"');
         readfile($file);
-        //unlink($file);
+        unlink($file);
         exit;
     }
 }
