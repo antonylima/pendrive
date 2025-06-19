@@ -6,7 +6,7 @@ function uploadFiles() {
         formData.append("files[]", files[i]);
     }
 
-    fetch("upload.php", { method: "POST", body: formData })
+    fetch("../upload.php", { method: "POST", body: formData })
         .then(response => response.text())
         .then(data => {
             if(formData){ 
@@ -16,7 +16,7 @@ function uploadFiles() {
 }
 
 function listFiles() {
-    fetch("list.php")
+    fetch("../list.php")
         .then(response => response.json())
         .then(files => {
             let fileList = document.getElementById("fileList");
